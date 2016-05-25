@@ -1,0 +1,82 @@
+[2016-05-24 11:07:52] alias_delete_execute
+alias_delete_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$1" ]]; then
+            \command \rm -fv "$_path/$1" || return $?;
+        fi;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$1" "delete";
+    alias_after_delete_default "$1" || return $?
+}
+current path: /home/leminhsang
+GEM_HOME=/home/leminhsang/.rvm/gems/ruby-2.3.0
+PATH=/home/leminhsang/.rvm/gems/ruby-2.3.0/bin:/home/leminhsang/.rvm/gems/ruby-2.3.0@global/bin:/home/leminhsang/.rvm/rubies/ruby-2.3.0/bin:/home/leminhsang/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GEM_PATH=/home/leminhsang/.rvm/gems/ruby-2.3.0:/home/leminhsang/.rvm/gems/ruby-2.3.0@global
+command(2): alias_delete_execute default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/leminhsang/.rvm/rubies/default ]]
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/leminhsang/.rvm/environments/default ]]
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/leminhsang/.rvm/wrappers/default ]]
++ __rvm_db_ /home/leminhsang/.rvm/config/alias default delete
++ typeset __db __key __value
++ __db=/home/leminhsang/.rvm/config/alias
++ __key=default
++ shift 2
++ __value=delete
++ case "${__value}" in
++ __rvm_db_remove /home/leminhsang/.rvm/config/alias default
++ [[ -f /home/leminhsang/.rvm/config/alias ]]
++ __rvm_sed -e '\#^default=# d' -e '/^$/d' /home/leminhsang/.rvm/config/alias
++ sed -e '\#^default=# d' -e '/^$/d' /home/leminhsang/.rvm/config/alias
++ command mv -f /home/leminhsang/.rvm/config/alias.new /home/leminhsang/.rvm/config/alias
++ mv -f /home/leminhsang/.rvm/config/alias.new /home/leminhsang/.rvm/config/alias
++ alias_after_delete_default default
++ [[ default == \d\e\f\a\u\l\t ]]
++ for _path in '"$rvm_bin_path"/default_*'
++ [[ -f /home/leminhsang/.rvm/bin/default_* ]]
++ _path='/home/leminhsang/.rvm/bin/default_*'
++ [[ -f /home/leminhsang/.rvm/bin/default_* ]]
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path='*'
++ command rm -fv '/home/leminhsang/.rvm/bin/*'
++ rm -fv '/home/leminhsang/.rvm/bin/*'
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=gem
++ command rm -fv /home/leminhsang/.rvm/bin/gem
++ rm -fv /home/leminhsang/.rvm/bin/gem
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=irb
++ command rm -fv /home/leminhsang/.rvm/bin/irb
++ rm -fv /home/leminhsang/.rvm/bin/irb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=erb
++ command rm -fv /home/leminhsang/.rvm/bin/erb
++ rm -fv /home/leminhsang/.rvm/bin/erb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=ri
++ command rm -fv /home/leminhsang/.rvm/bin/ri
++ rm -fv /home/leminhsang/.rvm/bin/ri
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=rdoc
++ command rm -fv /home/leminhsang/.rvm/bin/rdoc
++ rm -fv /home/leminhsang/.rvm/bin/rdoc
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=testrb
++ command rm -fv /home/leminhsang/.rvm/bin/testrb
++ rm -fv /home/leminhsang/.rvm/bin/testrb
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=rake
++ command rm -fv /home/leminhsang/.rvm/bin/rake
++ rm -fv /home/leminhsang/.rvm/bin/rake
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=ruby
++ command rm -fv /home/leminhsang/.rvm/bin/ruby
++ rm -fv /home/leminhsang/.rvm/bin/ruby
++ for _path in '"$rvm_path"/wrappers/default/*' gem irb erb ri rdoc testrb rake ruby bundle
++ _path=bundle
++ command rm -fv /home/leminhsang/.rvm/bin/bundle
++ rm -fv /home/leminhsang/.rvm/bin/bundle

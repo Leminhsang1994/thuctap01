@@ -1,0 +1,19 @@
+current directory: /home/leminhsang/.rvm/gems/ruby-2.3.0/gems/byebug-9.0.4/ext/byebug
+/home/leminhsang/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20160524-4220-1r2xjen.rb extconf.rb
+creating Makefile
+
+current directory: /home/leminhsang/.rvm/gems/ruby-2.3.0/gems/byebug-9.0.4/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/leminhsang/.rvm/gems/ruby-2.3.0/gems/byebug-9.0.4/ext/byebug
+make "DESTDIR="
+compiling byebug.c
+compiling threads.c
+compiling locker.c
+compiling breakpoint.c
+compiling context.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/leminhsang/.rvm/gems/ruby-2.3.0/gems/byebug-9.0.4/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20160524-4220-1la8g57/byebug

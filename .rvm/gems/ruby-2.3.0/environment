@@ -1,0 +1,8 @@
+export PATH="/home/leminhsang/.rvm/gems/ruby-2.3.0/bin:/home/leminhsang/.rvm/gems/ruby-2.3.0@global/bin:/home/leminhsang/.rvm/rubies/ruby-2.3.0/bin:$PATH"
+export GEM_HOME='/home/leminhsang/.rvm/gems/ruby-2.3.0'
+export GEM_PATH='/home/leminhsang/.rvm/gems/ruby-2.3.0:/home/leminhsang/.rvm/gems/ruby-2.3.0@global'
+export MY_RUBY_HOME='/home/leminhsang/.rvm/rubies/ruby-2.3.0'
+export IRBRC='/home/leminhsang/.rvm/rubies/ruby-2.3.0/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT
+export RUBY_VERSION='ruby-2.3.0'

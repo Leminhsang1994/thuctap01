@@ -1,0 +1,19 @@
+<h1>Say_goodbye</h1>
+
+<p><%= link_to "helloworld", say_helloworld_path %>!</p></br>
+
+<p>
+    It is now <%= Time.now %>
+</p>
+
+<p>
+    It is now <%= @time %>
+</p>
+Time in one hour: <%= 1.hour.from_now.localtime %></br>
+
+<h2>Tree file project</h2></br>
+
+<% for file in @files %>
+file name is: <%= file %></br>
+<% end %>
+
